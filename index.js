@@ -131,7 +131,7 @@ const getAdrReg = async (ATOID) => {
     const response = await axios.post('', createSOAP(command))
     const result = await XMLParser.parseString(response.data)
     try {
-      return result.Envelope.Body.GEONIMS.GEONIM[0].BUILDS
+      return result.Envelope.Body.GEONIMS
     } catch (err) {
       return console.log('XML is mailformed')
     }
@@ -199,11 +199,11 @@ module.exports = {
 
 // Usage Example
 
-// GetRegions().then(res => console.log(res))
-// GetOrgans().then(res => console.log(res))
-// GetAreas().then(res => console.log(res))
-// GetPollingStations(12).then(res => console.log(res))
-// GetATO(12).then(res => console.log(res))
-// GetCntVotATO(12).then(res => console.log(res))
-// GetAdrReg(14074).then(res => console.log(res))
-// GetCntVotPS(1).then(res => console.log(res))
+// getRegions().then(res => console.log(res))
+// getOrgans().then(res => console.log(res))
+// getAreas().then(res => console.log(res))
+// getPollingStations(12).then(res => console.log(res))
+// getATO(12).then(res => console.log(res))
+// getCntVotATO(12).then(res => console.log(res))
+// getAdrReg(14074).then(res => console.log(res))
+// getCntVotPS(1).then(res => console.log(res))
