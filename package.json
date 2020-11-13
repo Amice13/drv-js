@@ -1,0 +1,24 @@
+{
+  "name": "drv",
+  "version": "0.0.9",
+  "description": "Get data from Ukrainian Voters Registry Open Data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "open",
+    "data",
+    "elections",
+    "voters",
+    "registry",
+    "polling",
+    "stations"
+  ],
+  "author": "Zakharov Kyrylo",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "xml2js": "^0.4.23"
+  }
+}
